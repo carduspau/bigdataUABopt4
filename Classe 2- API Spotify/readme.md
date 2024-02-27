@@ -1,4 +1,6 @@
-# SPOTIFY API 2024
+# Classe 2 - SPOTIFY API 2024
+
+> 21/02/2024
 
 Hem utilitzat <a href="https://developer.spotify.com/documentation/web-api">l'API de Spotify </a> per obtenir informació d'altres artistes relacionats a partir d'un ID. La llibreria externa que ens ofereixen funcions com la del script: _get_related(artist_id)_ és <a href="https://spotipy.readthedocs.io/en/2.22.1/">Spotipy</a>.
 
