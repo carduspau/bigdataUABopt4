@@ -8,6 +8,11 @@ Seguidament hem desenvolupat un petit script per obtenir artistes relacionats de
 
 L'objectiu era guardar i mostrar tota aquesta informació en un format senzill i compatible així que hem emmagatzemat els resultats en un dataframe generat per nosaltres amb la llibreria Pandas i finalment hem volcat tota la informació en un arxiu d'excel anomenat _database.xlsx_
 
+### Tecnologies i llibreries noves que hem utilitzat: 
+
+|  | Tecnologia/Llibreria | Descripció |
+|--------|-----------------------|------------|
+| <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Pandas_logo.svg/700px-Pandas_logo.svg.png"></img> | Pandas | Pandas és una llibreria de programació de codi obert per a Python que proporciona estructures de dades flexibles i eines d'anàlisi de dades. És àmpliament utilitzada en anàlisi de dades, manipulació de dades i preparació de dades per a la ciència de dades. Pandas permet treballar amb dades tabulars i etiquetades de manera eficient, oferint funcions per a la lectura, escriptura, manipulació i anàlisi de dades. |
 <hr>
 <img src="https://cdn-icons-png.freepik.com/512/10748/10748293.png" width="40px">
 
