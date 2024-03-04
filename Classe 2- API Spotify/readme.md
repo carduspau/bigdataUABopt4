@@ -2,13 +2,20 @@
 
 > 21/02/2024
 
-Hem utilitzat <a href="https://developer.spotify.com/documentation/web-api">l'API de Spotify </a> per obtenir informació d'altres artistes relacionats a partir d'un ID. La llibreria externa que ens ofereixen funcions com la del script: _get_related(artist_id)_ és <a href="https://spotipy.readthedocs.io/en/2.22.1/">Spotipy</a>.
+Hem utilitzat <a href="https://developer.spotify.com/documentation/web-api">l'API de Spotify </a> per obtenir informació d'altres artistes relacionats a partir d'un ID. La llibreria externa que ens ofereixen funcions com la del script: _artist_related_artists(artist_id)_ és <a href="https://spotipy.readthedocs.io/en/2.22.1/">Spotipy</a>.
 
 Seguidament hem desenvolupat un petit script per obtenir artistes relacionats dels relacionats. És a dir en una esclaa de dos passos hem aconseguit multiplicar l'informació per cadascún dels primers artistes afins.
 
 L'objectiu era guardar i mostrar tota aquesta informació en un format senzill i compatible així que hem emmagatzemat els resultats en un dataframe generat per nosaltres amb la llibreria Pandas i finalment hem volcat tota la informació en un arxiu d'excel anomenat _database.xlsx_
 
 ### Tecnologies i llibreries noves que hem utilitzat: 
+
+| Logo | Tecnologia/Llibreria | Definició i ús |
+|------|-----------------------|----------------|
+| <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Pandas_logo.svg/700px-Pandas_logo.svg.png" alt="Pandas" width="100px"> | Pandas | Pandas és una llibreria de programació de codi obert per a Python que proporciona estructures de dades flexibles i eines d'anàlisi de dades. És àmpliament utilitzada en anàlisi de dades, manipulació de dades i preparació de dades per a la ciència de dades. Pandas permet treballar amb dades tabulars i etiquetades de manera eficient, oferint funcions per a la lectura, escriptura, manipulació i anàlisi de dades. Nosaltres l'hem fet servir per crear un dataframe a partir de la llista d'artistes i per passar aquesta a un arxiu excel |
+| <img src="https://a.fsdn.com/allura/s/openpyxl/icon?8d3a8249a75894ec1de16e02aa088b0d72d299d84940f1b5d53689e918ed25a7?" alt="Openpyxl" width="100px"> | Openpyxl | Openpyxl és una biblioteca de Python de codi obert que permet als desenvolupadors treballar amb fitxers d'Excel (.xlsx). Permet la creació, lectura i modificació de fitxers Excel de manera programàtica. En el nostre cas l’hem fet servir per darrere com a motor perquè la funció `.to_excel()` de Pandas pugui passar el dataframe final a un arxiu Excel.  <br><br> `final.to_excel("dataset.xlsx")` |
+| <img src="https://github.com/albertarrebola08/bigdataUABopt4/assets/104431726/319461bf-f746-4ed6-a72e-8397ad7ae261" alt="Spotipy" width="100px"> | Spotipy | Spotipy és una llibreria de Python que proporciona un accés fàcil a l'API de Spotify. Suporta una gran quantitat de funcions pròpies que connecten directament amb Spotify i et donen accés a informació d’artistes, cançons… la resposta de l’API sempre és en format JSON. El nostre script parteix d’spotipy, i l’utilitzem per obtenir artistes relacionats partint d’un id. <br><br> `artist_id = '7ltDVBr6mKbRvohxheJ9h1'`<br> `results = spotify.artist_related_artists(artist_id)` |
+
 <hr>
 <img src="https://cdn-icons-png.freepik.com/512/10748/10748293.png" width="40px">
 
