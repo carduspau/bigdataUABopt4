@@ -18,9 +18,12 @@ L'objectiu era guardar i mostrar tota aquesta informació en un format senzill i
 | <img src="https://github.com/albertarrebola08/bigdataUABopt4/assets/104431726/319461bf-f746-4ed6-a72e-8397ad7ae261" alt="Spotipy" width="50px"> | Spotipy | Spotipy és una llibreria de Python que proporciona un accés fàcil a l'API de Spotify. Suporta una gran quantitat de funcions pròpies que connecten directament amb Spotify i et donen accés a informació d’artistes, cançons… la resposta de l’API sempre és en format JSON. El nostre script parteix d’spotipy, i l’utilitzem per obtenir artistes relacionats partint d’un id. <br><br> `artist_id = '7ltDVBr6mKbRvohxheJ9h1'`<br> `results = spotify.artist_related_artists(artist_id)` |
 
 <hr>
-<img src="https://cdn-icons-png.freepik.com/512/10748/10748293.png" width="40px">
 
- #### Deures propera classe: Obtenir la màxima informació dels artistes partint de la mateixa API 
+ ### Tasques 
+
+ <img src="https://cdn-icons-png.freepik.com/512/10748/10748293.png" width="40px">
+ 
+ #### 1) Obtenir la màxima informació dels artistes partint de la mateixa API 
    
  - [x] ID de l'artista
  - [x] Nom
