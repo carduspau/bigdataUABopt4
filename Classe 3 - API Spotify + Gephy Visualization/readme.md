@@ -6,12 +6,9 @@ Obtenir les relacions dels generes entre els artistes relacionats obtinguts a la
 _main.py_
 ![image](https://github.com/albertarrebola08/bigdataUABopt4/assets/104431726/c940e094-72a7-494a-8f9a-1df1198473ab)
 
-
 ### Tasques 
 #### 1) Incloure gèneres musicals al dataset i visualitzar les relacions mitjançant un Graph > _tasca1.py_
 ![image](https://github.com/albertarrebola08/bigdataUABopt4/assets/104431726/a978f106-1207-4993-b0f4-b76519c97a18)
-
-
 
 <img src="https://cdn-icons-png.freepik.com/512/10748/10748293.png" width="40px">
 
@@ -19,15 +16,15 @@ _main.py_
 <img src="https://github.com/albertarrebola08/bigdataUABopt4/assets/104431726/e2c03681-a282-402a-82c8-bcf45531b578" width="500px"> <br>
 
 El procés consistia en "alimentar" la funció treballada fins ara: _artist_related_artist(artist_id)_ passant com a argument l'artist_id obtingut dinàmicament desde un bucle for mitjançant una altra funció de l'API anomenada: _playlist_items(playlist_id)_.
-S'ha utilitzat la playlist "!Arriba los ánimos!", generada pel propi Spotify formada per 80 cançons. <br> M'ha semblat interessant estudiar quins artistes i gèneres considera Spotify que pujaran el nostre estat anímic.
-
-
+S'ha utilitzat la playlist "!Arriba los ánimos!", generada pel propi Spotify formada per 80 cançons. <br><br> M'ha semblat interessant estudiar quins artistes i gèneres considera Spotify que pujaran el nostre estat anímic. En aquest cas hi ha 3 que destaquen: 
+- Pop / Dance Pop
+- Soul
+- Rock / Soft Rock
+- Reggueton / Urbano (tenen una agrupació modular molt separada a la resta pero amb un tamany a considerar)
 
 #### 3) Generar el graph 
 
 ![image](https://github.com/albertarrebola08/bigdataUABopt4/assets/104431726/2f015f05-fef0-43f5-b6f8-862a33235bce)
-
-
 
 <hr>
 
