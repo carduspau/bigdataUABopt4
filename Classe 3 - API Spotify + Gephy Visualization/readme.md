@@ -3,18 +3,29 @@
 > 
 Obtenir les relacions dels generes entre els artistes relacionats obtinguts a la classe anterior. S'emmagatzema les dades en un CSV i mitjançant pandas en un dataframe amb "source" i "target" que son els que Gephi interpretarà per mostrar l'esquema graph i podrem veure les relacions entre aquests generes en base als artistes.
 
-![image](https://github.com/albertarrebola08/bigdataUABopt4/assets/104431726/fcd9eedd-bcbb-4e7b-a71b-779a834e93a8)
+_main.py_
+![image](https://github.com/albertarrebola08/bigdataUABopt4/assets/104431726/c940e094-72a7-494a-8f9a-1df1198473ab)
+
 
 ### Tasques 
-#### 1) Incloure gèneres musicals al dataset i visualitzar les relacions mitjançant un Graph 
-![image](https://github.com/albertarrebola08/bigdataUABopt4/assets/104431726/0bf5849f-e3a5-495d-b5cf-914b04e70095)
+#### 1) Incloure gèneres musicals al dataset i visualitzar les relacions mitjançant un Graph > _tasca1.py_
+![image](https://github.com/albertarrebola08/bigdataUABopt4/assets/104431726/a978f106-1207-4993-b0f4-b76519c97a18)
+
+
 
 <img src="https://cdn-icons-png.freepik.com/512/10748/10748293.png" width="40px">
 
-#### 2) Fer el mateix procés d'obtenció pero a partir d'una playlist. Obtenir dades en excel de les dades bàsiques 
+#### 2) Fer el mateix procés d'obtenció pero a partir d'una playlist. > _tasca2.py_
+<img src="https://github.com/albertarrebola08/bigdataUABopt4/assets/104431726/e2c03681-a282-402a-82c8-bcf45531b578" width="500px"> <br>
+
+El procés consistia en "alimentar" la funció treballada fins ara: _artist_related_artist(artist_id)_ passant com a argument l'artist_id obtingut dinàmicament desde un bucle for mitjançant una altra funció de l'API anomenada: _playlist_items(playlist_id)_.
+S'ha utilitzat la playlist "!Arriba los ánimos!", generada pel propi Spotify formada per 80 cançons. <br> M'ha semblat interessant estudiar quins artistes i gèneres considera Spotify que pujaran el nostre estat anímic.
+
 
 
 #### 3) Generar el graph 
+
+![image](https://github.com/albertarrebola08/bigdataUABopt4/assets/104431726/2f015f05-fef0-43f5-b6f8-862a33235bce)
 
 
 
