@@ -30,11 +30,16 @@ S'ha utilitzat la playlist "!Arriba los ánimos!", generada pel propi Spotify fo
 
 <hr>
 
+#### 4) Crear JSON's de playlist utilitzant l'offset i processar-los després de recopilar-los
+- import json
+- import glob
+
 ### Tecnologies i llibreries noves que hem utilitzat: 
 
 |               | Tecnologia/Llibreria | Definició i ús                             |
 |-----------------------|-----------------------|----------------------------------------|
 | <img src="https://gephi.org/gephi-lite/gephi-logo.svg" width="200px"> | Gephi                 | Eina de visualització de xarxes i gràfics, utilitzada per analitzar, explorar i visualitzar dades de xarxes complexes. Ampla aplicació en ciència de les xarxes, visualització de dades i investigació social. En el nostre cas com es vee a les captures, l'hem fet servir per fer visualitzacions interactives i veure les relacions entre artistes i gèneres mitjançant nodes |
+| GLOB LIBRARY | glob                 | Llibreria que permet obtenir informació dels fitxers de la carpeta i emmagatzar en un array filtrant amb instruccions com en el nostre cas que hem obtingut només els .json (`*:json`) |
 
 
 
