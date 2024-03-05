@@ -3,6 +3,8 @@
 > 
 Obtenir les relacions dels generes entre els artistes relacionats obtinguts a la classe anterior. S'emmagatzema les dades en un CSV i mitjançant pandas en un dataframe amb "source" i "target" que son els que Gephi interpretarà per mostrar l'esquema graph i podrem veure les relacions entre aquests generes en base als artistes.
 
+**Artista origen:** "Segismundo Toxicómano"
+
 _main.py_
 ![image](https://github.com/albertarrebola08/bigdataUABopt4/assets/104431726/c940e094-72a7-494a-8f9a-1df1198473ab)
 
