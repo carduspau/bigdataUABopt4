@@ -13,8 +13,7 @@ Si la nota equivale a un 10, añadir el texto "matrícula de honor".
 Columna 4: Diferencia de nota respecto a la mediana del grupo
 Columna 4: Diferencia de nota (expreseda en porcentaje) respecto a la mediana del grupo
 Condiciones especiales
-Antes de hacer los cálculos, debes sumar UN punto a cada alumno, pero la nota máxima nunca puede superar el 10.
-'''
+Antes de hacer los cálculos, debes sumar UN punto a cada alumno, pero la nota máxima nunca puede superar el 10.'''
 
 import pandas as pd
 
@@ -22,14 +21,10 @@ notes = [1, 6, 8, 9, 10, 6, 5]
 alumnes = ["Jaume", "Carles", "Cristina", "Josep", "Rafael", "Agnès", "Marta"]
 cognoms = ["Tort", "Soldevila", "Luna", "Muñoz", "Fernandez", "Hernandez", "Llopart"]
 
-dicc = {}
 llista_noms_cognoms = []
-
 for i in range(len(alumnes)):
-    nom_cognom = f'{alumnes[i]}  {cognoms[i]}'  # Added space after comma
-    llista_noms_cognoms.append(nom_cognom)
-
-print(llista_noms_cognoms)
+    nombre_apellido = alumnes[i] + ' ' + cognoms[i]
+    llista_noms_cognoms.append(nombre_apellido)
 
 def increment(notes):
     notes_arreglades = []
@@ -37,59 +32,67 @@ def increment(notes):
         if nota < 10:
             nota += 1
         notes_arreglades.append(nota)
+
     return notes_arreglades
 
 def to_text(notes_arreglades):
     notes_text = []
     for nota in notes_arreglades:
-        if(nota<5):
-            nota = "Suspendido"
-            notes_text.append(nota)
-        elif(nota>=5 and nota<= 6):
-            nota = "Aprovado"
-            notes_text.append(nota)
-        elif(nota>6 and nota <7):
-            nota = "Bien"
-            notes_text.append(nota)
-        elif(nota>=7 and nota <9):
-            nota = "Notable"
-            notes_text.append(nota)
-        elif(nota>=9 and nota <10):
-            nota = "Excelente"
-            notes_text.append(nota)
-        elif(nota==10):
-            nota = "Matricula"
-            notes_text.append(nota)
+        if nota < 5:
+            nota_texto = "Suspendido"
+        elif 5 <= nota <= 6:
+            nota_texto = "Aprobado"
+        elif 6 < nota < 7:
+            nota_texto = "Bien"
+        elif 7 <= nota < 9:
+            nota_texto = "Notable"
+        elif 9 <= nota < 10:
+            nota_texto = "Excelente"
+        elif nota == 10:
+            nota_texto = "Matricula"
+        notes_text.append(nota_texto)
+
     return notes_text
 
+def diferencia_mitjana(notes_arreglades):
+    mitjana_notes = round(sum(notes_arreglades) / len(notes_arreglades))
+    diferencia_mitj = []
+    for nota in notes_arreglades:
+        diferencia = nota - mitjana_notes
+        diferencia_mitj.append(diferencia)
 
-'''Columna 4: Diferencia de nota respecto a la mediana del grupo
-Columna 4: Diferencia de nota (expreseda en porcentaje) respecto a la mediana del grupo'''
+    return diferencia_mitj
 
-def diferenia_mediana(notes_arreglades):
-    mitjana_notes = notes_arreglades.sum() /len(notes_arreglades)
+def diferencia_mitjana_percent(notes_arreglades):
+    mitjana_notes = round(sum(notes_arreglades) / len(notes_arreglades))
+    porcentajes_mitj = []
+    for nota in notes_arreglades:
+        diferencia = nota - mitjana_notes
+        porcentaje = (diferencia / mitjana_notes) * 100
+        porcentajes_mitj.append(porcentaje)
 
-    return mitjana_notes
+    return porcentajes_mitj
 
-def diferencia_mediana_percent():
-
-
-
+# ejecutar funciones
 notes_arreglades = increment(notes)
 notes_text = to_text(notes_arreglades)
+diferencia_mitjana = diferencia_mitjana(notes_arreglades)
+diferencia_percent_mitjana = diferencia_mitjana_percent(notes_arreglades)
 
-print (notes_arreglades)
-print(notes_text)
+dicc = {}
+llista_final = []
 
+for i in range(len(alumnes)):
+    dicc = {
+        "Nom i cognoms ": alumnes[i] + ' ' + cognoms[i],
+        "Nota alumne (nº)": notes_arreglades[i],
+        "Avaluació ": notes_text[i],
+        "Diferencia de nota respecte la mitjana ": diferencia_mitjana[i],
+        "Diferencia de nota (%) respecte la mitjana ": diferencia_percent_mitjana[i]
+    }
+    llista_final.append(dicc)
 
+df = pd.DataFrame(llista_final)
+df.to_csv('alumnos_final.csv', index=False)
 
-
-
-
-'''
-df = pd.DataFrame(),
-df = pd.DataFrame.from_dict()
-
-
-output = to_dataframe().to_csv('output.csv',sep=";", index=False)'''
 
