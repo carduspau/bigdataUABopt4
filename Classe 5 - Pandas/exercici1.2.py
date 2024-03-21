@@ -46,7 +46,7 @@ df = df.drop(['channelId', 'categoryId', 'channelTitle', 'tags', 'publishedAt', 
 df.to_csv("final.csv")
 
 #7. Calcula la duración en segundos de cada video, e indica su desviación porcentual sobre el promedio de duración de los videos del canal.
-
+#### Pendent de fer a classe amb una comprovació del docent
 
 
 
