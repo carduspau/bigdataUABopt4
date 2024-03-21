@@ -20,3 +20,10 @@ _Exemple dataset 2002_:
 - Per a cada fila del dataframe, realitza una cerca a través de l'API de Spotify utilitzant informació com el cantant, la cançó i l'any del Festival d'Eurovisió. Els resultats de la cerca s'emmagatzemen en un fitxer JSON anomenat "search.json".
   ![image](https://github.com/albertarrebola08/bigdataUABopt4/assets/104431726/ccb20c7b-f1f8-4a26-8aef-1b29f1c05840)
 - Es pausa l'execució durant 15 segons després de cada cerca per evitar superar els límits d'ús de l'API de Spotify. (poden ser menys segons, els 15 son per fer comprovacions del primer resultat amb tranquilitat).
+
+### Tecnologies i llibreries noves que hem utilitzat: 
+
+|               | Tecnologia/Llibreria | Definició i ús                             |
+|-----------------------|-----------------------|----------------------------------------|
+| <img src="https://gephi.org/gephi-lite/gephi-logo.svg" width="200px"> | Gephi                 | Eina de visualització de xarxes i gràfics, utilitzada per analitzar, explorar i visualitzar dades de xarxes complexes. Ampla aplicació en ciència de les xarxes, visualització de dades i investigació social. En el nostre cas com es vee a les captures, l'hem fet servir per fer visualitzacions interactives i veure les relacions entre artistes i gèneres mitjançant nodes |
+| GLOB LIBRARY | glob                 | Llibreria que permet obtenir informació dels fitxers de la carpeta i emmagatzar en un array filtrant amb instruccions com en el nostre cas que hem obtingut només els .json (`*:json`) |
