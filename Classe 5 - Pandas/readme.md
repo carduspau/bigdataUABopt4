@@ -1,5 +1,5 @@
 # Classe 5 - Pandas
-> 19/03/2024
+> 12/03/2024
 >
 Treballar amb la llibreria Pandas en relació als dataframes. Obtenir dades realitzar operacions per fer transformacions de les dades i després visualitzar-ho en un format llegible i exportable com un .CSV passant abans per els dataframes propis de la llibreria Pandas.
 <hr>
