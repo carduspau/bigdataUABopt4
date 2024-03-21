@@ -1,3 +1,5 @@
+@author = Pol Gubau Amores
+
 notes = [1,6,8,9,10,6,5]
 alumnes = ["Jaume", "Carles", "Cristina", "Josep", "Rafael", "Agnès", "Marta"]
 cognoms = ["Tort","Soldevila","Luna","Muñoz","Fernandez","Hernandez", "Llopart"]
