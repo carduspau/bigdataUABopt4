@@ -9,4 +9,6 @@ Un dels processos que hem fet ha estat: Crear JSON's de playlist utilitzant **of
  import glob
 --
 
-L'última part de la classe ha constat en configurar el nostre accés a l'API de Twitch. Hem creat un nou projecte i hem obtingut la les credencials per poder treballar amb ella en les seguents sessions. 
+L'última part de la classe ha constat en configurar el nostre accés a l'API de Twitch. Hem creat un nou projecte i hem obtingut la les credencials per poder treballar amb ella. 
+
+__main.py__ utilitza aquesta API per obtenir streams: **get_streams** i agruparlos en diferents JSON's amb un identificador propi. Un nou mètode après i bastant imprescindible en l'obtenció de dades és time.sleep (de la llibreria time nativa de Python). Això el que ens permetrà és donar marge entre captacions de dades per evitar col·lapses i que Twith ens denegui l'accés.
