@@ -30,5 +30,5 @@ Per obtenir la informació necessària, s'han utilitzat les següents tècniques
 Un cop recopilades les dades, es generarà una visualització clara i concisa utilitzant la plataforma Tableau. Aquesta visualització es publicarà en un lloc web perquè sigui accessible per a tothom interessat en els resultats de l'estudi.
 
 ## Conclusió
-Aquest estudi proporcionarà una anàlisi detallada de la perdua de poder adquisitiu a Espanya des del 2005 fins al 2023, així com el seu impacte en les cerques i la producció de contingut a YouTube. Els resultats obtenits ajudaran a comprendre millor aquest fenomen i les seves implicacions en la vida quotidiana dels ciutadans espanyols.
+Aquest estudi proporcionarà una anàlisi detallada de la perdua de poder adquisitiu a Espanya des del 2005 fins al 2023, així com el seu impacte en les cerques i la producció de contingut a YouTube. Els resultats obtiguts ajudaran a comprendre millor aquest fenomen i les seves implicacions en la vida quotidiana dels ciutadans espanyols.
 
